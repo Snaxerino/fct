@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link href="css/output.css" rel="stylesheet">
+    <!-- Animações CSS -->
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.css">
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/082fcabe62.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-Satoshi bg-white dark:bg-zinc-800 grid-row-6">
+    <!-- Zona Home -->
+    <div id="home" class="col-span-1 row-span-1 h-full md:h-screen animate__animated animate__fadeIn">
+        <!-- Inicio Header -->
+        <header class="flex items-center justify-between h-16 w-full shadow shadow-slate-200 dark:shadow px-8 md:px-16  lg:px-20 md:justify-end lg:justify-between fixed top-0 bg-white dark:bg-zinc-800 z-50">
+            <a class="flex items-center cursor-pointer select-none md:mr-auto lg:mr-0" href="index.html">
+                <i class="fa-solid fa-bolt text-slate-600 text-xl pr-1 dark:text-slate-200"></i>
+                <h2 class="text-3xl text-blue-500 font-extrabold">FCT</h2>
+            </a>
+            <!-- Links do Menu -->
+            <nav class="hidden md:flex">
+                <ul class="flex items-center [&>li]:text-slate-600 [&>li]:px-2 [&>li]:font-semibold [&>li]:dark:text-slate-200">
+                    <li class="hover:text-blue-500 dark:hover:text-blue-500 duration-200">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="hover:text-blue-500 dark:hover:text-blue-500 duration-200">
+                        <a href="#sobre">Sobre</a>
+                    </li>
+                    <li class="hover:text-blue-500 dark:hover:text-blue-500 duration-200">
+                        <a href="#contribuidores">Contribuidores</a>
+                    </li>
+                    <li class="hover:text-blue-500 dark:hover:text-blue-500 duration-200">
+                        <a href="#cursos">Cursos</a>
+                    </li>
+                    <!-- Login -->
+                    <button class="bg-blue-500 text-slate-200 duration-200 font-semibold  -blue-500 px-3 py-1 rounded-full mx-2 hover:bg-blue-600 hover:text-slate-200" onclick="goToLoginPage()">Login &rarr;</button>
+                </ul>
+            </nav>
+            <!-- Trocar tema e icones relacionados com a escola -->
+            <div class="flex items-center">
+                <!-- Icon 3 pontos -->
+                <div class="hidden md:block lg:hidden">
+                    <i class="fa-solid fa-ellipsis fa-xl text-slate-600 dark:text-slate-200 md:ml-2 hover:rotate-90 hover:text-slate duration-500"></i>
+                </div>
+                <div class="hidden items-center md:hidden lg:flex">
+                    <!-- Trocar Tema -->
+                    <button class="hover:bg-azul-com-opacidade rounded-md duration-200 px-3 py-2 mx-2 block dark:hidden">
+                        <i class="fa-solid fa-moon fa-lg text-slate-400"></i>
+                    </button>
+                    <button class="hover:bg-preto-com-opacidade rounded-md duration-200 px-3 py-2 mx-2 hidden dark:block">
+                        <i class="fa-solid fa-fire-flame-curved fa-lg text-slate-200"></i>
+                    </button>
+                    <!-- Icones relaionados com a escola -->
+                    <div class="hidden md:flex [&>a]:text-slate-400 [&>a]:px-3 items-center [&>a]:text-lg [&>a]:dark:text-slate-200">
+                        <a class="-l" href="https://www.facebook.com/agrupamentodeescolasdesantamariamaior">
+                            <i class="fa-brands fa-facebook-f hover:text-blue-500 duration-200 pl-2"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCdlo76ck9sVojRF8Nm3HYcg">
+                            <i class="fa-brands fa-youtube hover:text-red-500 duration-200"></i>
+                        </a>
+                        <a href="https://www.esmaior.pt/esmaior">
+                            <i class="fa-solid fa-sitemap hover:text-red-800 duration-200"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu -->
+            <div class="md:hidden">
+                <i class="fa-solid fa-bars-staggered fa-xl cursor-pointer text-slate-600 dark:text-slate-200"></i>
+            </div>
+        </header>
+        <!-- Zona Principal -->
+        <div class="flex flex-col px-8 h-full md:px-16 lg:px-20 pt-24 md:pt-28">
+            <!-- Informação principal e imagem -->
+            <div class="inline-flex flex-col md:flex-row justify-between">
+                <div class="justify-center  md:w-96 lg:w-[28rem]">
+                    <h2 class="font-black text-3xl text-center md:text-start text-slate-600 dark:text-slate-200 md:text-4xl uppercase md:pb-4">Agora está tudo muito mais <span class="text-blue-500">fácil!</span></h2>
+                    <p class="font-medium text-slate-500 dark:text-gray-400 text-center md:text-start lg:text-lg my-3 md:my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam deleniti beatae temporibus omnis eveniet repellendus aspernatur, cum reiciendis? </p>
+                    <div class="flex justify-center md:justify-start">
+                        <button id="loginButton" class="bg-blue-500 text-slate-200 duration-200 font-semibold px-4 py-2 rounded-full hover:bg-blue-600 hover:text-slate-200 mt-3 md:mt-4" onclick="goToLoginPage()">Estás em estágio? Esperimenta!</button>
+                    </div>
+                </div>
+                <div class="h-auto w-auto lg:w-96 bg-gray-500 overflow-hidden md:px-6 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 my-6 md:my-0">
+                    <img class="max-w-full max-h-full object-contain m-auto" src="imgs/main.png" alt="">
+                </div>
+            </div>
+            <!-- Estatísticas -->
+            <div class="flex h-32 justify-around w-full items-center">
+                <div class="text-center">
+                    <p class="font-bold text-2xl pb-1 text-slate-600 dark:text-slate-200">4.8</p>
+                    <p class="text-slate-500">Avaliação</p>
+                </div>
+                <div class="text-center">
+                    <p class="font-bold text-2xl pb-1 text-slate-600 dark:text-slate-200">20+</p>
+                    <p class="text-slate-500">Empresas</p>
+                </div>
+                <div class="text-center">
+                    <p class="font-bold text-2xl pb-1 text-slate-600 dark:text-slate-200">350+</p>
+                    <p class="text-slate-500">Estagiários</p>
+                </div>
+            </div>     
+        </div>
+    </div>
+    <!-- Zona Sobre -->
+    <div id="sobre" class="col-span-1 row-span-2 h-screen border">
+        <p class="text-slate-200">2</p>
+    </div>
+    <!-- Zona Contribuidores -->
+    <div id="contribuidores" class="col-span-1 row-span-3 h-screen border">
+        <p class="text-slate-200">3</p>
+    </div>
+    <!-- Zona Cursos -->
+    <div id="cursos" class="col-span-1 row-span-4 h-screen border">
+        <p class="text-slate-200">4</p>
+    </div>
+
+    <script src="js/save_theme.js"></script>
+    <script src="js/goToLoginPage.js"></script>
+    <script src="js/showAnimationWhenScrolling.js   "></script>
+</body>
+</html>

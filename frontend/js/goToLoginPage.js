@@ -1,4 +1,4 @@
-function goToLoginPage() {
-    document.querySelector("#loginButton");
-    location.href = "login.html";
-};
+const goToLoginPage = () => {
+    // document.querySelector("#loginButton");
+    location.href = "frontend/login.html";
+}

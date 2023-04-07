@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FCT - Home</title>
+    <link rel="shortcut icon" href="frontend/assets/imgs/favicon.ico" type="image/x-icon">
     <!-- CSS -->
     <link href="frontend/assets/css/output.css" rel="stylesheet">
     <!-- Animações CSS -->
-    <link rel="stylesheet" href="node_modules/animate.css/animate.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.css1">
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/082fcabe62.js" crossorigin="anonymous"></script>
 </head>
 <body class="font-Satoshi bg-white dark:bg-zinc-800 grid-row-6">
     <!-- Zona Home -->
-    <div id="home" class="col-span-1 row-span-1 h-screen animate__animated animate__fadeIn animate__delay-1s">
+    <div id="home" class="h-full animate__animated animate__fadeIn animate__delay-1s">
         <!-- Inicio Header -->
         <header class="flex items-center justify-between h-14 md:h-16 w-full shadow shadow-slate-200 dark:shadow px-8 md:px-12 lg:px-20 md:justify-end lg:justify-between fixed top-0 bg-white dark:bg-zinc-800 z-50">
             <a class="flex items-center cursor-pointer select-none md:mr-auto lg:mr-0" href="index.html">
@@ -30,10 +31,10 @@
                         <a href="#sobre">Sobre</a>
                     </li>
                     <li class="hover:text-blue-500 dark:hover:text-blue-500 duration-200">
-                        <a href="#contribuidores">Contribuidores</a>
+                        <a href="#cursos">Cursos</a>
                     </li>
                     <li class="hover:text-blue-500 dark:hover:text-blue-500 duration-200">
-                        <a href="#cursos">Cursos</a>
+                        <a href="#contribuidores">Contribuidores</a>
                     </li>
                     <!-- Login -->
                     <button class="bg-blue-500 text-slate-200 duration-200 font-semibold px-3 py-1 rounded-full mx-2 hover:bg-blue-600 hover:text-slate-200" onclick="goToLoginPage()">Login &rarr;</button>
@@ -43,7 +44,7 @@
             <div class="flex items-center">
                 <!-- Icon 3 pontos -->
                 <div class="hidden md:block lg:hidden">
-                    <i class="fa-solid fa-ellipsis fa-xl text-slate-600 dark:text-slate-200 md:ml-2 hover:rotate-90 hover:text-slate duration-500"></i>
+                    <i class="fa-solid fa-ellipsis fa-lg text-slate-600 dark:text-slate-200 md:ml-2 hover:rotate-90 hover:text-slate duration-500"></i>
                 </div>
                 <div class="hidden items-center md:hidden lg:flex">
                     <!-- Trocar Tema -->
@@ -73,15 +74,19 @@
             </div>
         </header>
         <!-- Zona Principal -->
-        <div class="flex flex-col px-8 h-full md:px-12 lg:px-20 pt-24 md:pt-28">
-            <!-- Informação principal e imagem -->
+        <div class="flex flex-col h-full px-8 md:px-12 lg:px-20 pt-24 md:pt-28">
+            <!-- Informação principal, login, video e imagem -->
             <div class="flex flex-col md:flex-row justify-between">
                 <div class="md:w-96 lg:w-[28rem]">
                     <p class="font-medium text-lg text-blue-500 hidden md:block mb-2">Para os alunos do profissional!</p>
                     <h2 class="font-black text-3xl text-center md:text-start text-slate-600 dark:text-slate-200 md:text-4xl uppercase md:pb-2">Agora está tudo muito mais <span class="text-blue-500">fácil!</span></h2>
-                    <p class="font-medium text-slate-500 dark:text-gray-400 text-center md:text-start lg:text-lg my-3 md:pt-2 pr-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic laboriosam deleniti beatae temporibus omnis eveniet repellendus aspernatur, cum reiciendis? </p>
-                    <div class="flex justify-center md:justify-start">
-                        <button id="loginButton" class="bg-blue-500 text-slate-200 duration-200 font-semibold px-4 py-2 rounded-full hover:bg-blue-600 hover:text-slate-200 mt-3" onclick="goToLoginPage()">Estás em estágio? Esperimenta!</button>
+                    <p class="font-medium text-slate-500 dark:text-gray-400 text-center md:text-start lg:text-lg my-3 md:pt-2 pr-2">intuito de ajudar os alunos dos cursos profissionais e as respetivas empresas na gestão dos seus respetivos estágios.</p>
+                    <div class="flex md:flex-row justify-center md:justify-start">
+                        <button id="loginButton" class="bg-blue-500 text-slate-200 duration-200 font-semibold px-4 py-2 rounded-full hover:bg-blue-600 hover:text-slate-200 mt-3 mr-3" onclick="goToLoginPage()">
+                            <span class="block md:hidden">Login &rarr;</span>
+                            <span class="hidden md:block">Em estágio? Experimente!</span>
+                        </button>
+                        <button id="loginButton" class="bg-gray-200 text-slate-600 hover:bg-gray-300 duration-200 font-semibold px-4 py-2 rounded-full mt-3"><i class="fa-regular fa-circle-play"></i> Ver video &rarr;</button>
                     </div>
                 </div>
                 <div class="h-auto w-auto lg:w-96 bg-gray-500 overflow-hidden md:px-6 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 my-6 md:my-0">
@@ -89,27 +94,30 @@
                 </div>
             </div>
             <!-- Estatísticas -->
-            <div class="flex justify-around w-full items-center my-auto border rounded-lg p-6">
+            <div class="flex justify-around w-full items-center border rounded-lg mt-8 md:mt-8 lg:mt-16 p-4 md:p-6">
                 <div class="text-center">
-                    <p class="font-bold text-2xl pb-1 text-slate-600 dark:text-slate-200">4.8</p>
+                    <p class="font-bold text-3xl pb-1 text-slate-600 dark:text-slate-200">4.8</p>
                     <p class="font-medium text-slate-500 dark:text-gray-400">Avaliação</p>
                 </div>
                 <div class="text-center">
-                    <p class="font-bold text-2xl pb-1 text-slate-600 dark:text-slate-200">20+</p>
+                    <p class="font-bold text-3xl pb-1 text-slate-600 dark:text-slate-200">20+</p>
                     <p class="font-medium text-slate-500 dark:text-gray-400">Empresas</p>
                 </div>
                 <div class="text-center">
-                    <p class="font-bold text-2xl pb-1 text-slate-600 dark:text-slate-200">350+</p>
+                    <p class="font-bold text-3xl pb-1 text-slate-600 dark:text-slate-200">150+</p>
                     <p class="font-medium text-slate-500 dark:text-gray-400">Estagiários</p>
                 </div>
             </div>     
         </div>
     </div>
     <!-- Zona Sobre
-    <div id="sobre" class="col-span-1 row-span-2 h-screen border">
-        <p class="text-slate-200">2</p>
-    </div>
     -->
+    <!-- <div id="sobre" class="h-screen px-8 md:px-12 lg:px-20 pt-24 md:pt-28">
+        <div class="w-96 lg:w-[36rem] border m-auto">
+            <h2 class="font-black text-3xl text-center text-slate-600 dark:text-slate-200 md:text-4xl uppercase md:pb-2">Agora está tudo muito mais <span class="text-blue-500">fácil!</span></h2>
+            <p class="font-medium text-slate-500 dark:text-gray-400 text-center lg:text-lg my-3 pr-2">intuito de ajudar os alunos dos cursos profissionais e as respetivas empresas na gestão dos seus estágios.</p>  
+        </div>
+    </div> -->
 
     <!-- Zona Contribuidores
     <div id="contribuidores" class="col-span-1 row-span-3 h-screen border">

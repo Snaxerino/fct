@@ -12,8 +12,7 @@
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/082fcabe62.js" crossorigin="anonymous"></script>
 </head>
-<body class="font-Satoshi bg-white">
-    <!-- <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 border"> -->
+<body class="font-Satoshi bg-white dark:bg-zinc-800">
     <div class="flex flex-row h-screen">
         <div class="hidden lg:w-1/2 bg-blue-500 md:flex justify-center items-center">
             <img class="max-w-full max-h-full object-contain m-auto" src="assets/imgs/Saly - Ilustração 3D.png" alt="">
@@ -21,30 +20,32 @@
 
         <div class="w-full lg:w-1/2 m-auto text-center px-8 md:px-12 lg:px-20">
             <i class="fa-solid fa-bolt text-blue-500 text-5xl pr-1 dark:text-blue-500 pb-4"></i>
-            <h2 class="text-2xl font-medium text-slate-200 dark:text-slate-600 pb-3">Bem-vindo de Volta!</h2>
+            <h2 class="text-2xl font-medium text-slate-600 dark:text-slate-200 pb-3">Bem-vindo de Volta!</h2>
             <p class="font-medium text-slate-500 dark:text-gray-400 pb-9">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, assumenda.</p>
             <form action="../backend/login.php" class="flex flex-col m-auto" autocomplete="off">
-                <label for="password" class="flex flex-row justify-between items-center border border-gray-200 w-full rounded-md py-2 px-3 mb-8">
+                <!-- Utilizador -->
+                <label for="utilizador" class="flex flex-row justify-between items-center border border-slate-500 dark:border-gray-400 w-full rounded-md py-2 px-3 mb-8">
                     <input class="bg-transparent outline-none caret-slate-500 text-slate-500 dark:text-gray-400" type="text" name="utilizador" id="utilizador" placeholder="Utilizador">
-                    <i class="fa-solid fa-eye text-slate-500 dark:text-gray-400"></i>
+                    <i class="fa-solid fa-user text-slate-500 dark:text-gray-400"></i>
                 </label>
-                <label for="password" class="flex flex-row justify-between items-center border border-gray-200 w-full rounded-md py-2 px-3 mb-1 focus:ring focus:border-blue-500">
-                    <input class="bg-transparent outline-none caret-slate-500 text-slate-500 dark:text-gray-400" type="password" name="password" id="password" placeholder="Password">
-                    <i class="fa-solid fa-lock text-slate-500 dark:text-gray-400"></i>
+                <!-- Password -->
+                <label for="password" class="flex flex-row justify-between items-center border border-slate-500 dark:border-gray-400 w-full rounded-md py-2 px-3 mb-1 focus:ring focus:border-blue-500">
+                    <input class="bg-transparent outline-none caret-slate-500 text-slate-500 dark:text-gray-400 placeholder:text-slate-500 placeholder:dark:text-gray-400" type="password" name="password" id="password" placeholder="Password">
+                    <i class="fa-solid fa-eye-slash text-slate-500 dark:text-gray-400" onclick="showHidePassword()"></i>
                 </label>
                 <!-- Guardar Password ou Recuperar Password -->
                 <div class="flex justify-between mb-8">
-                    <label class="text-slate-500 dark:text-gray-400 flex" for="guardar_password">
+                    <label for="guardar_password" class="text-slate-500 dark:text-gray-400 flex">
                         <input class="mr-1" type="checkbox" name="guardar_password" id="guardar_password">
                         <p>Guardar Password</p>
                     </label>
                     <a href="#" class="text-blue-500 font-medium">Recuperar password</a>
                 </div>
-                <!-- <input class="bg-blue-500 text-slate-200 duration-200 font-semibold py-1 rounded-sm">Login</input> -->
                 <input type="submit" value="Login" class="bg-blue-500 text-slate-200 duration-200 font-semibold py-2 rounded-md">
             </form>
         </div>
     </div>
-    <script src="frontend/assets/js/save_theme.js"></script>
+    <script src="../frontend/assets/js/save_theme.js"></script>
+    <script src="../frontend/assets/js/showHidePassword.js"></script>
 </body>
 </html>

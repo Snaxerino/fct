@@ -13,11 +13,10 @@
     <script src="https://kit.fontawesome.com/082fcabe62.js" crossorigin="anonymous"></script>
 </head>
 <body class="font-Satoshi bg-white dark:bg-zinc-800">
-    <div class="flex flex-row h-screen">
+    <div class="flex flex-row h-screen animate__animated animate__fadeIn">
         <div class="hidden lg:w-1/2 bg-blue-500 md:flex justify-center items-center">
             <img class="max-w-full max-h-full object-contain m-auto" src="assets/imgs/Saly - Ilustração 3D.png" alt="">
         </div>
-
         <div class="w-full lg:w-1/2 m-auto text-center px-8 md:px-12 lg:px-20">
             <i class="fa-solid fa-bolt text-blue-500 text-5xl pr-1 dark:text-blue-500 pb-4"></i>
             <h2 class="text-2xl font-medium text-slate-600 dark:text-slate-200 pb-3">Bem-vindo de Volta!</h2>
@@ -41,11 +40,13 @@
                     </label>
                     <a href="#" class="text-blue-500 font-medium text-sm md:text-base">Recuperar password</a>
                 </div>
-                <input type="submit" value="Login" class="bg-blue-500 text-slate-200 duration-200 font-semibold py-2 rounded-md">
+                <input type="submit" value="Login" class="bg-blue-500 hover:bg-blue-600 text-slate-200 duration-200 font-semibold py-2 rounded-md mb-4">
             </form>
+            <button class="w-full bg-transparent border border-slate-500 dark:border-gray-400 text-gray-300 hover:dark:text-slate-600 hover:bg-gray-300 duration-200 font-semibold py-2 rounded-md" onclick="loginToMenu()">Voltar</button>
         </div>
     </div>
     <script src="../frontend/assets/js/save_theme.js"></script>
+    <script src="../frontend/assets/js/links.js"></script>
     <script src="../frontend/assets/js/showHidePassword.js"></script>
 </body>
 </html>

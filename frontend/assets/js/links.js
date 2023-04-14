@@ -1,4 +1,7 @@
 const goToLoginPage = () => {
-    // document.querySelector("#loginButton");
     location.href = "frontend/login.html";
+}
+
+const loginToMenu = () => {
+    location.href = "../index.html";
 }

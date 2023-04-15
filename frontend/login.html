@@ -17,20 +17,26 @@
         <div class="hidden lg:w-1/2 bg-blue-500 md:flex justify-center items-center">
             <img class="max-w-full max-h-full object-contain m-auto" src="assets/imgs/Saly - Ilustração 3D.png" alt="">
         </div>
-        <div class="w-full lg:w-1/2 m-auto text-center px-8 md:px-12 lg:px-20">
+        <div class="w-full lg:w-1/2 m-auto text-center px-8 md:px-12 lg:px-28">
+            <button class="absolute top-0 right-0 hover:bg-azul-com-opacidade rounded-md duration-200 px-3 py-2 m-2 block dark:hidden">
+                <i class="fa-solid fa-moon fa-lg text-slate-400"></i>
+            </button>
+            <button class="absolute top-0 right-0 hover:bg-preto-com-opacidade rounded-md duration-200 px-3 py-2 m-2 hidden dark:block">
+                <i class="fa-solid fa-fire-flame-curved fa-lg text-slate-200"></i>
+            </button>
             <i class="fa-solid fa-bolt text-blue-500 text-5xl pr-1 dark:text-yellow-300 pb-4"></i>
             <h2 class="text-2xl font-medium text-slate-600 dark:text-slate-200 pb-3">Bem-vindo de Volta!</h2>
-            <p class="font-medium text-slate-500 dark:text-gray-400 pb-9">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, assumenda.</p>
+            <p class="font-medium text-slate-500 dark:text-gray-400 pb-9 px-12">Faz login para acederes à tua conta e utilizares os serviços que temos para ti. </p>
             <form action="../backend/login.php" class="flex flex-col m-auto" autocomplete="off">
                 <!-- Utilizador -->
-                <label for="utilizador" class="flex flex-row justify-between items-center border border-slate-400 dark:border-gray-400 w-full rounded-md py-2 px-3 mb-8 cursor-pointer">
-                    <input class="bg-transparent border-0 outline-none caret-slate-400 text-slate-400 dark:text-gray-400 placeholder:text-slate-500 placeholder:dark:text-gray-400 cursor-pointer" type="text" name="utilizador" id="utilizador" placeholder="Utilizador">
-                    <i class="fa-solid fa-user text-slate-400 dark:text-gray-400"></i>
+                <label for="utilizador" class="flex flex-row justify-between items-center border border-slate-400 dark:border-gray-400 rounded-md py-2 px-3 mb-8 cursor-pointer">
+                    <input class="bg-transparent border-0 outline-none caret-slate-400 text-slate-400 dark:text-gray-400 placeholder:text-slate-500 placeholder:dark:text-gray-400 cursor-pointer w-full" type="text" name="utilizador" id="utilizador" placeholder="Utilizador">
+                    <i class="fa-solid fa-user text-slate-400 dark:text-gray-400 ml-4"></i>
                 </label>
                 <!-- Password -->
-                <label for="password" class="flex flex-row justify-between items-center border border-slate-400 dark:border-gray-400 w-full rounded-md py-2 px-3 mb-1 cursor-pointer">
-                    <input class="bg-transparent border-0 outline-none caret-slate-400 text-slate-400 dark:text-gray-400 placeholder:text-slate-500 placeholder:dark:text-gray-400 cursor-pointer" type="password" name="password" id="password" placeholder="Password">
-                    <i class="fa-solid fa-eye-slash text-slate-400 dark:text-gray-400" onclick="showHidePassword()"></i>
+                <label for="password" class="flex flex-row justify-between items-center border border-slate-400 dark:border-gray-400 rounded-md py-2 px-3 mb-1 cursor-pointer">
+                    <input class="bg-transparent border-0 outline-none caret-slate-400 text-slate-400 dark:text-gray-400 placeholder:text-slate-500 placeholder:dark:text-gray-400 cursor-pointer w-full" type="password" name="password" id="password" placeholder="Password">
+                    <i class="fa-solid fa-eye-slash text-slate-400 dark:text-gray-400 ml-3" onclick="showHidePassword()"></i>
                 </label>
                 <!-- Guardar Password ou Recuperar Password -->
                 <div class="flex justify-between mb-8">
@@ -42,7 +48,7 @@
                 </div>
                 <input type="submit" value="Login" class="bg-blue-500 hover:bg-blue-600 text-slate-200 duration-200 font-semibold py-2 rounded-md mb-4 cursor-pointer">
             </form>
-            <button class="w-full bg-transparent border border-slate-500 dark:border-gray-400 text-gray-300 hover:dark:text-slate-600 hover:bg-gray-300 duration-200 font-semibold py-2 rounded-md" onclick="loginToMenu()">Voltar</button>
+            <button class="w-full bg-transparent border border-slate-500 dark:border-gray-300 text-gray-300 hover:dark:text-slate-600 hover:bg-gray-300 duration-200 font-semibold py-2 rounded-md" onclick="loginToMenu()">Voltar</button>
         </div>
     </div>
     <script src="../frontend/assets/js/save_theme.js"></script>

@@ -17,8 +17,8 @@ const trocarTema = () => {
   }
 };
 
-document.addEventListener('keydown', (event) => {
-  if (event.metaKey || event.ctrlKey && event.code === 'KeyM') {
+document.addEventListener('keydown', (tecla) => {
+  if (tecla.metaKey || tecla.ctrlKey && tecla.code === 'KeyM') {
     trocarTema();
   }
 });

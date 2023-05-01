@@ -12,7 +12,7 @@
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/082fcabe62.js" crossorigin="anonymous"></script>
     <!-- JS -->
-    <script src="assets/js/switchTheme.js"></script>
+    <script src="assets/js/trocarTema.js"></script>
 </head>
 <body class="font-Satoshi bg-white dark:bg-zinc-800" onload="autoFocus()">
     <div class="flex flex-row h-screen">
@@ -34,14 +34,14 @@
             <form name="loginUser" action="" onsubmit="return validarLogin()" class="flex flex-col m-auto" autocomplete="off">
                 <!-- Utilizador -->
                 <div class="flex flex-col ">
-                    <label for="utilizador" class="flex flex-row justify-between items-center border border-slate-400 dark:border-gray-400 rounded-md py-2 px-3 mb-3 cursor-pointer focus:outline-none focus:ring-4 focus:ring-inset focus:ring-blue-500">
+                    <label for="utilizador" class="flex flex-row justify-between items-center border border-slate-400 dark:border-gray-400 rounded-md py-2 px-3 mb-3 cursor-pointer">
                         <input id="utilizador" class="bg-transparent border-0 outline-none caret-slate-400 text-slate-400 dark:text-gray-400 placeholder:text-slate-500 placeholder:dark:text-gray-400 cursor-pointer w-full" type="text" name="utilizador" id="utilizador" placeholder="Utilizador">
                         <i class="fa-solid fa-user text-slate-400 dark:text-gray-400 pl-4"></i>
                     </label>
                 </div>
                 <!-- Password -->
-                <label for="password" class="flex flex-row justify-between items-center border border-slate-400 dark:border-gray-400 rounded-md py-2 px-3 mt-3 cursor-pointer ">
-                    <input class="bg-transparent border-0 outline-none caret-slate-400 text-slate-400 dark:text-gray-400 placeholder:text-slate-500 placeholder:dark:text-gray-400 cursor-pointer w-full" 
+                <label for="password" class="flex flex-row justify-between items-center border border-slate-400 dark:border-gray-400 rounded-md py-2 px-3 mt-3 cursor-pointer">
+                    <input class="bg-transparent border-0 outline-none caret-slate-400 text-slate-400 dark:text-gray-400 placeholder:text-slate-500 placeholder:dark:text-gray-400 w-full" 
                             type="password" 
                             name="password" 
                             id="password" 
@@ -51,7 +51,7 @@
                 <!-- Guardar Password ou Recuperar Password -->
                 <div class="flex justify-between mb-8 pt-1">
                     <label for="guardar_password" class="text-slate-500 dark:text-gray-400 flex items-center cursor-pointer">
-                        <input class="mr-1 border-slate-400 dark:border-gray-400 bg-transparent cursor-pointer" type="checkbox" name="guardar_password" id="guardar_password">
+                        <input class="mr-1 border-slate-400 dark:border-gray-400 bg-transparent" type="checkbox" name="guardar_password" id="guardar_password">
                         <p class="text-sm md:text-base">Guardar Password</p>
                     </label>
                     <a href="#" class="text-blue-500 font-medium text-sm md:text-base">Recuperar password</a>
@@ -60,15 +60,15 @@
                 <!-- <input type="submit" value="Login" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-md mb-2 cursor-pointer"> -->
             </form>
             <!-- Para efeito de testes, apenas temporário -->
-            <button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-md mb-2 cursor-pointer" onclick="privatePage()">Login</button>
+            <button class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-md mb-2 cursor-pointer" onclick="paginaPrivada()">Login</button>
             <!-- Voltar para a página principal -->
-            <button class="w-full border border-slate-500 dark:border-gray-300 text-slate-600 dark:text-gray-300 hover:dark:text-slate-600 hover:bg-slate-500 hover:text-white dark:hover:bg-gray-300 font-semibold py-2 rounded-md mt-2" onclick="loginToMenu()">Voltar</button>
+            <button class="w-full border border-slate-500 dark:border-gray-300 text-slate-600 dark:text-gray-300 hover:dark:text-slate-600 hover:bg-slate-500 hover:text-white dark:hover:bg-gray-300 font-semibold py-2 rounded-md mt-2" onclick="voltarParaMenu()">Voltar</button>
         </div>
     </div>
 
     <!-- JS -->
     <script src="assets/js/links.js"></script>
-    <script src="assets/js/showHidePassword.js"></script>
     <script src="assets/js/autoFocus.js"></script>
+    <script src="assets/js/mostrarEsconderPassword.js"></script>
 </body>
 </html>

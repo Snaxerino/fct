@@ -1,190 +1,225 @@
 <!doctype html>
 <html class="dark scroll-smooth" lang="pt-pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FCT - Home</title>
+    <title>FCT - Página Inicial</title>
     <link rel="shortcut icon" href="frontend/assets/imgs/favicon.ico" type="image/x-icon">
     <!-- CSS -->
     <link href="frontend/assets/css/output.css" rel="stylesheet">
     <!-- Animações CSS -->
-    
+
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/082fcabe62.js" crossorigin="anonymous"></script>
     <!-- JS -->
-    <script src="frontend/assets/js/switchTheme.js"></script>
+    <script src="frontend/assets/js/trocarTema.js"></script>
 </head>
-<body class="font-Satoshi bg-white dark:bg-zinc-800">
-    <!-- Zona Home -->
-    <div id="home" class="h-full">
-        <!-- Inicio Header -->
-        <header class="flex items-center justify-between h-14 md:h-16 w-full shadow shadow-slate-200 dark:shadow px-8 md:px-12 lg:px-20 md:justify-end lg:justify-between fixed top-0 bg-white dark:bg-zinc-800 z-50">
-            <a class="flex items-center cursor-pointer select-none md:mr-auto lg:mr-0" href="index.html">
-                <i class="fa-solid fa-bolt text-slate-600 text-xl pr-1 dark:text-slate-200"></i>
-                <h2 class="text-3xl text-blue-500 font-extrabold">FCT</h2>
-            </a>
-            <!-- Links do Menu -->
-            <nav class="hidden md:flex" id="navigation">
-                <ul class="flex items-center [&>li]:text-slate-600 [&>li]:px-2 [&>li]:font-semibold [&>li]:dark:text-slate-200" id="nav">
-                    <li class="hover:text-blue-500 dark:hover:text-blue-500">
-                        <a href="#home">Home</a>
-                    </li>
-                    <li class="hover:text-blue-500 dark:hover:text-blue-500">
-                        <a href="#sobre">Sobre</a>
-                    </li>
-                    <li class="hover:text-blue-500 dark:hover:text-blue-500">
-                        <a href="#contribuidores">Contribuidores</a>
-                    </li>
-                    <li class="hover:text-blue-500 dark:hover:text-blue-500">
-                        <a href="#cursos">Cursos</a>
-                    </li>
-                    <!-- <ul class="font-semibold dark:text-slate-200 [&>#options]:hover:block">
-                        <li id="showOptions" class="hover:text-blue-500 dark:hover:text-blue-500 [&>*]:duration-200 [&>i]:hover:-rotate-90 relative">
-                            <a href="#cursos">Cursos</a>
-                            <i class="fa-solid fa-chevron-down text-xs"></i>
-                        </li>
-                        <div id="options" class="bg-gray-100 mt- p-2 hidden rounded-lg absolute">
-                            <ul class="[&>li]:text-slate-600 [&>li]:font-medium [&>li]:p-2 [&>li]:text-center [&>li]:rounded-md [&>li]:duration-200">
-                                <li class="hover:bg-slate-200 hover:text-blue-500 flex">
-                                    <img src="frontend/assets/imgs/icons/audiovisuais.png" alt="audiovisuais" class="w-6 rounded-sm mx-1">
-                                    <a href="#audiovisuais">Audiovisuais</a>
-                                </li>
-                                <li class="hover:bg-slate-200 hover:text-blue-500 flex">
-                                    <img src="frontend/assets/imgs/icons/informatica.png" alt="audiovisuais" class="w-6 rounded-sm mx-1">
-                                    <a href="#informatica">Informática</a>
-                                </li>
-                                <li class="hover:bg-slate-200 hover:text-blue-500 flex">
-                                    <img src="frontend/assets/imgs/icons/massagens.png" alt="audiovisuais" class="w-6 rounded-sm mx-1">
-                                    <a href="#masssagens">Massagens</a>
-                                </li>
-                                <li class="hover:bg-slate-200 hover:text-blue-500 flex">
-                                    <img src="frontend/assets/imgs/icons/turismo.png" alt="audiovisuais" class="w-6 rounded-sm mx-1">
-                                    <a href="#turismo">Turismo</a>
-                                </li>
-                                
-                            </ul>
-                        </div>
-                    </ul> -->
-                </ul>
-                <!-- Login -->
-                <button class="bg-blue-500 text-slate-200 font-semibold px-3 py-1 rounded-full mx-2 hover:bg-blue-600 hover:text-slate-200" onclick="goToLoginPage()">Login &rarr;</button>
-            </nav>
-            <!-- Trocar tema e icones relacionados com a escola -->
-            <div class="flex items-center">
-                <!-- Icon 3 pontos -->
-                <div class="relative">
-                    <div class="hidden md:block lg:hidden">
-                        <i class="fa-solid fa-ellipsis fa-lg text-slate-600 dark:text-slate-200 md:ml-2 dark:hover:text-slate-400 hover:text-slate duration-500" onclick="showMediumMenu()"></i>
-                    </div>
-                    <div id="mediumMenu" class="hidden absolute -right-6 mt-4">
-                        <div class="bg-zinc-700 p-2 flex items-center rounded-tr-md rounded-tl-md">
-                            <p class="font-medium pr-2 text-sm text-slate-600 dark:text-gray-300">Aparência</p>
-                            <button class="rounded-md px-2 py-1 block dark:hidden">
-                                <i class="fa-solid fa-moon text-lg text-slate-400"></i>
-                            </button>
-                            <button class="rounded-md px-2 py-1 hidden dark:block">
-                                <i class="fa-solid fa-sun text-lg text-slate-200"></i>
-                            </button>
-                        </div>
-                        <div class="bg-zinc-700 p-2 flex items-center rounded-br-md rounded-bl-md justify-around [&>a]:text-slate-400 [&>a]:text-lg [&>a]:dark:text-slate-200">
-                            <a href="https://www.facebook.com/agrupamentodeescolasdesantamariamaior">
-                                <i class="fa-brands fa-facebook-f hover:text-blue-500 pl-2"></i>
-                            </a>
-                            <a href="https://www.youtube.com/channel/UCdlo76ck9sVojRF8Nm3HYcg">
-                                <i class="fa-brands fa-youtube hover:text-red-500"></i>
-                            </a>
-                            <a href="https://www.esmaior.pt/esmaior">
-                                <i class="fa-solid fa-sitemap hover:text-red-800"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden items-center md:hidden lg:flex">
-                    <!-- Trocar Tema -->
-                    <button class="hover:bg-azul-com-opacidade dark:hover:bg-preto-com-opacidade rounded-md h-10 w-10 mr-2" onclick="trocarTema()">
-                        <i id="trocarIcon" class="fa-solid fa-sun text-lg dark:text-slate-200 text-slate-400"></i>
-                    </button>
-                    <!-- Icones relaionados com a escola -->
-                    <div class="hidden md:flex [&>a]:text-slate-400 [&>a]:px-3 items-center [&>a]:text-lg [&>a]:dark:text-slate-200">
-                        <a class="border-l" href="https://www.facebook.com/agrupamentodeescolasdesantamariamaior">
-                            <i class="fa-brands fa-facebook-f hover:text-blue-500 pl-2"></i>
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCdlo76ck9sVojRF8Nm3HYcg">
-                            <i class="fa-brands fa-youtube hover:text-red-500"></i>
-                        </a>
-                        <a href="https://www.esmaior.pt/esmaior">
-                            <i class="fa-solid fa-sitemap hover:text-red-800"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Menu Icon  -->
-            <div class="md:hidden">
-                <i class="fa-solid fa-bars-staggered fa-xl cursor-pointer text-slate-600 dark:text-slate-200"></i>
-            </div>
-        </header>
-        <!-- Fim Header -->
-        <!-- Zona Principal -->
-        <div class="flex flex-col px-8 md:px-12 lg:px-20 pt-24 md:pt-28">
-            <!-- Informação principal, login, video e imagem -->
-            <div class="flex flex-col md:flex-row justify-between">
-                <div class="md:w-96 lg:w-[28rem]">
-                    <p class="font-medium text-lg text-blue-500 hidden md:block mb-2">Para os alunos do profissional!</p>
-                    <h2 class="font-black text-3xl text-center md:text-start text-slate-600 dark:text-slate-200 md:text-4xl uppercase md:pb-2">Agora está tudo muito mais <span class="text-blue-500">fácil!</span></h2>
-                    <p class="font-medium text-slate-500 dark:text-gray-400 text-center md:text-start lg:text-lg my-3 md:pt-2 pr-2">intuito de ajudar os alunos dos cursos profissionais e as respetivas empresas na gestão dos seus respetivos estágios.</p>
-                    <div class="flex md:flex-row justify-center md:justify-start">
-                        <button id="loginButton" class="bg-blue-500 text-slate-200 font-semibold px-4 py-2 rounded-full hover:bg-blue-600 hover:text-slate-200 mt-3 mr-3" onclick="goToLoginPage()">
-                            <span class="block md:hidden">Login &rarr;</span>
-                            <span class="hidden md:block">Em estágio? Experimenta!</span>
-                        </button>
-                        <button id="loginButton" class="bg-gray-200 text-slate-600 hover:bg-gray-300 font-semibold px-4 py-2 rounded-full mt-3"><i class="fa-regular fa-circle-play"></i> Ver video</button>
-                    </div>
-                    <p class="text-slate-600 dark:text-slate-200">Control + M ou Command M para mudar tema ( TESTE! )</p>
-                </div>
-                <div class="h-auto w-auto lg:w-96 bg-gray-500 overflow-hidden md:px-6 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 my-6 md:my-0">
-                    <img class="max-w-full max-h-full object-contain m-auto" src="frontend/assets/imgs/main.png" alt="">
-                </div>
-            </div>
-            <!-- Estatísticas -->
-            <div class="flex justify-around w-full items-center border rounded-lg mt-8 md:mt-8 lg:mt-16 p-4 md:p-6">
-                <div class="text-center">
-                    <p class="font-bold text-3xl pb-1 text-slate-600 dark:text-slate-200">20+</p>
-                    <p class="font-medium text-slate-500 dark:text-gray-400">Entidades</p>
-                </div>
-                <div class="text-center">
-                    <p class="font-bold text-3xl pb-1 text-slate-600 dark:text-slate-200">150+</p>
-                    <p class="font-medium text-slate-500 dark:text-gray-400">Estagiários</p>
-                </div>
-                <div class="text-center">
-                    <p class="font-bold text-3xl pb-1 text-slate-600 dark:text-slate-200 relative">4.8 
-                        <i class="fa-solid fa-star absolute text-sm text-yellow-400"></i>
-                    </p>
-                    <p class="font-medium text-slate-500 dark:text-gray-400">Avaliação</p>
-                </div>
-            </div>     
-        </div>
-    </div>
-    <!-- Fim Zona Home -->
-    
-    <!-- Zona Sobre -->
-    <div id="sobre" class="h-full">
-        <div class="px-8 md:px-12 lg:px-20 pt-24 md:pt-28">
-        </div>
-    </div>
-    <!--Fim Zona Sobre -->
 
-    <!-- Zona Contribuidores
-    <div id="contribuidores" class="h-screen border">
-        <p class="text-slate-200">3</p>
-    </div>
-    -->
-    <!-- Zona Cursos
-    <div id="cursos" class="h-screen border">
-        <p class="text-slate-200">4</p>
-    </div>
-    -->
+<body class="font-Satoshi bg-slate-50 dark:bg-zinc-800">
+    <!---------------------------------------------------- Zona Home ------------------------------------------------------>
+    
+    <!-- Inicio Header -->
+    <header class="bg-slate-50 dark:bg-zinc-800 flex items-center justify-between h-14 md:h-16 w-full shadow shadow-slate-200 dark:shadow px-8 md:px-12 lg:px-20 md:justify-end lg:justify-between fixed top-0 z-50">
+        <a class="flex items-center cursor-pointer select-none md:mr-auto lg:mr-0" href="index.html">
+            <i class="fa-solid fa-bolt text-slate-600 text-xl pr-1 dark:text-slate-200"></i>
+            <h2 class="text-3xl text-blue-500 font-extrabold">FCT</h2>
+        </a>
+        <!-- Links do Menu -->
+        <nav class="hidden md:flex">
+            <ul class="flex items-center [&>li]:text-slate-600 [&>li]:px-2 [&>li]:font-semibold [&>li]:dark:text-slate-200">
+                <li class="hover:text-blue-500 dark:hover:text-blue-500">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="hover:text-blue-500 dark:hover:text-blue-500">
+                    <a href="#sobre">Sobre</a>
+                </li>
+                <li class="hover:text-blue-500 dark:hover:text-blue-500">
+                    <a href="#parceiros">Parceiros</a>
+                </li>
+                <li class="hover:text-blue-500 dark:hover:text-blue-500">
+                    <a href="#contribuidores">Contribuidores</a>
+                </li>
+                <!-- <li class="hover:text-blue-500 dark:hover:text-blue-500">
+                    <a href="#cursos">Cursos</a>
+                </li> -->
+            </ul>
+            <!-- Login -->
+            <button
+                class="bg-blue-500 text-slate-200 font-semibold px-3 py-1 rounded-full mx-2 hover:bg-blue-600"
+                onclick="paginaLogin()">Login &rarr;</button>
+        </nav>
+        <!-- Trocar tema e icones relacionados com a escola -->
+        <div class="flex items-center">
+            <!-- Icon 3 pontos -->
+            <div class="hidden md:block lg:hidden">
+                <i class="fa-solid fa-ellipsis fa-lg text-slate-600 dark:text-slate-200 md:ml-2 dark:hover:text-slate-400 hover:text-slate"></i>
+            </div>
+            <div class="hidden items-center md:hidden lg:flex">
+                <!-- Trocar Tema -->
+                <button class="hover:bg-azul-com-opacidade dark:hover:bg-preto-com-opacidade rounded-md h-10 w-10 mr-2"
+                    onclick="trocarTema()">
+                    <i id="trocarIcon" class="fa-solid fa-sun text-lg dark:text-slate-200 text-slate-400"></i>
+                </button>
+                <!-- Icones relaionados com a escola -->
+                <div class="hidden md:flex [&>a]:text-slate-400 [&>a]:px-3 items-center [&>a]:text-lg [&>a]:dark:text-slate-200">
+                    <a class="border-l" href="https://www.facebook.com/agrupamentodeescolasdesantamariamaior">
+                        <i class="fa-brands fa-facebook-f hover:text-blue-500 pl-2"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCdlo76ck9sVojRF8Nm3HYcg">
+                        <i class="fa-brands fa-youtube hover:text-red-500"></i>
+                    </a>
+                    <a href="https://www.esmaior.pt/esmaior">
+                        <i class="fa-solid fa-sitemap hover:text-red-800"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Menu Icon  -->
+        <div class="md:hidden">
+            <i id="abrirMenu"
+                class="fa-solid fa-bars-staggered fa-xl cursor-pointer text-slate-600 dark:text-slate-200"></i>
+        </div>
+    </header>
+    <!-- Fim Header -->
+
+    <!-- Zona Principal -->
+    <main id="home" class="flex flex-col px-8 md:px-12 lg:px-20 pt-24 md:pt-28">
+        <!-- Informação principal, login, video e imagem -->
+        <section class="flex flex-col md:flex-row justify-between">
+            <div class="md:w-96 lg:w-[28rem]">
+                <p class="font-medium text-lg text-blue-500 hidden md:block mb-2">Para os alunos do profissional!
+                </p>
+                <h2 class="font-black text-3xl text-center md:text-start text-slate-600 dark:text-slate-200 md:text-4xl uppercase md:pb-2">
+                    Agora está tudo muito mais <span class="text-blue-500">fácil!</span></h2>
+                <p class="font-medium text-slate-500 dark:text-gray-400 text-center md:text-start lg:text-lg my-3 md:pt-2 pr-2">
+                    intuito de ajudar os alunos dos cursos profissionais e as respetivas empresas na gestão dos seus
+                    respetivos estágios.</p>
+                <div class="flex md:flex-row justify-center md:justify-start">
+                    <button id="loginButton"
+                        class="bg-blue-500 text-slate-200 font-semibold px-4 py-2 rounded-full hover:bg-blue-600 hover:text-slate-200 mt-3 mr-3"
+                        onclick="paginaLogin()">
+                        <span class="block md:hidden">Login &rarr;</span>
+                        <span class="hidden md:block">Em estágio? Experimenta!</span>
+                    </button>
+                    <button id="loginButton" class="bg-gray-200 text-slate-600 hover:bg-gray-300 font-semibold px-4 py-2 rounded-full mt-3" onclick="verVideo()">
+                        <i class="fa-regular fa-circle-play"></i> Ver video</button>
+                </div>
+                <p class="text-slate-600 dark:text-slate-200">Control + M ou Command M para mudar tema ( TESTE! )
+                </p>
+            </div>
+            <div
+                class="h-auto w-auto lg:w-96 bg-gray-500 overflow-hidden md:px-6 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 my-5 md:my-0">
+                <img class="max-w-full max-h-full object-contain m-auto" src="frontend/assets/imgs/main.png" alt="">
+            </div>
+        </section>
+        <!-- Números importantes -->
+        <section class="flex justify-around w-full items-center border rounded-lg mt-5 md:mt-8 lg:mt-16 p-4 md:p-6 mb-6">
+            <div class="text-center">
+                <p class="font-bold text-3xl pb-1 text-slate-600 dark:text-slate-200">20+</p>
+                <p class="font-medium text-slate-500 dark:text-gray-400">Entidades</p>
+            </div>
+            <div class="text-center">
+                <p class="font-bold text-3xl pb-1 text-slate-600 dark:text-slate-200">150+</p>
+                <p class="font-medium text-slate-500 dark:text-gray-400">Estagiários</p>
+            </div>
+            <div class="text-center">
+                <p class="font-bold text-3xl pb-1 text-slate-600 dark:text-slate-200 relative">4.8
+                    <i class="fa-solid fa-star absolute text-sm text-yellow-400"></i>
+                </p>
+                <p class="font-medium text-slate-500 dark:text-gray-400">Avaliação</p>
+            </div>
+        </section>
+    </main>
+    <!-- Fim Zona Principal -->
+
+    <!------------------------------------------------ Fim Zona Home ------------------------------------------------------>
+
+    <!---------------------------------------------------- Zona Sobre ------------------------------------------------------>
+    
+    <!-- Funcionalidades -->
+    <main id="sobre" class="w-full px-8 md:px-12 lg:px-20">
+        <!-- Informação principal e funcionalidades -->
+        <section class="flex flex-col m-auto md:w-[30rem] mt-6 md:mt-12">
+            <h2 class="font-black text-3xl text-center text-slate-600 dark:text-slate-200 md:text-4xl uppercase">O nosso objetivo é <span class="text-blue-500">simplificar a sua vida!</span></h2>
+            <p class="font-medium text-slate-500 dark:text-gray-400 text-center lg:text-lg my-3 pr-2">Estamos repletos de funcionalidades. Algumas delas como: </p>
+        </section>
+        <!-- Cartões -->
+        <section class="flex flex-wrap md:flex-row justify-around">
+            <!-- Cartão 1 -->
+            <div class="w-full h-40 md:h-44 lg:h-48 md:w-[45%] lg:w-[31%] p-6 bg-zinc-700 rounded-xl my-3 md:my-2">
+                <div class="flex flex-row items-center pb-4">
+                    <div class="h-10 w-10 bg-zinc-800 rounded-md flex justify-center items-center">
+                        <img src="frontend/assets/imgs/icons/Aluno - Icon.png" alt="icon Aluno" class="h-7 w-7">
+                    </div>
+                    <h3 class="text-slate-600 dark:text-slate-200 text-2xl md:text-xl font-semibold pl-4">Alunos</h3>
+                </div>
+                <p class="text-slate-500 dark:text-gray-400 font-medium">Gerir alunos nunca foi tão fácil, e com um filtro e temos logo o que precisamos!</p>
+            </div>
+            <!-- Fim Cartão 1 -->
+            <!-- Cartão 2 -->
+            <div class="w-full h-40 md:h-44 lg:h-48 md:w-[45%] lg:w-[31%] p-6 bg-zinc-700 rounded-xl my-3 md:my-2">
+                <div class="flex flex-row items-center pb-4">
+                    <div class="h-10 w-10 bg-zinc-800 rounded-md flex justify-center items-center">
+                        <img src="frontend/assets/imgs/icons/Empresa - Icon.png" alt="icon Aluno" class="h-7 w-7">
+                    </div>
+                    <h3 class="text-slate-600 dark:text-slate-200 text-2xl md:text-xl font-semibold pl-4">Empresas</h3>
+                </div>
+                <p class="text-slate-500 dark:text-gray-400 font-medium">Agora o nome das empresas pode ser visto com grande facilidade no nosso sistema!</p>
+            </div>
+            <!-- Fim Cartão 2 -->
+            <!-- Cartão 3 -->
+            <div class="w-full h-40 md:h-44 lg:h-48 md:w-[45%] lg:w-[31%] p-6 bg-zinc-700 rounded-xl my-3 md:my-2">
+                <div class="flex flex-row items-center pb-4">
+                    <div class="h-10 w-10 bg-zinc-800 rounded-md flex justify-center items-center">
+                        <img src="frontend/assets/imgs/icons/Falta - Icon.png" alt="icon Aluno" class="h-7 w-7">
+                    </div>
+                    <h3 class="text-slate-600 dark:text-slate-200 text-2xl md:text-xl font-semibold pl-4">Marcar Faltas</h3>
+                </div>
+                <p class="text-slate-500 dark:text-gray-400 font-medium">Possibilidade de marcar faltas mais fácilmente sem se preocupar como nos tempos do papel!</p>
+            </div>
+            <!-- Fim Cartão 3 -->
+            <!-- Cartão 4 -->
+            <div class="w-full h-40 md:h-44 lg:h-48 md:w-[45%] lg:w-[31%] p-6 bg-zinc-700 rounded-xl my-3 md:my-2">
+                <div class="flex flex-row items-center pb-4">
+                    <div class="h-10 w-10 bg-zinc-800 rounded-md flex justify-center items-center">
+                        <img src="frontend/assets/imgs/icons/Versatilidade - Icon.png" alt="icon Aluno" class="h-7 w-7">
+                    </div>
+                    <h3 class="text-slate-600 dark:text-slate-200 text-2xl md:text-xl font-semibold pl-4">Versatilidade</h3>
+                </div>
+                <p class="text-slate-500 dark:text-gray-400 font-medium">Apresenta a capacidade de desempenhar funções ou tarefas com eficiência e habilidade.</p>
+            </div>
+            <!-- Fim Cartão 4 -->
+            <!-- Cartão 5 -->
+            <div class="w-full h-40 md:h-44 lg:h-48 md:w-[45%] lg:w-[31%] p-6 bg-zinc-700 rounded-xl my-3 md:my-2">
+                <div class="flex flex-row items-center pb-4">
+                    <div class="h-10 w-10 bg-zinc-800 rounded-md flex justify-center items-center">
+                        <img src="frontend/assets/imgs/icons/Orientador - Icon.png" alt="icon Aluno" class="h-7 w-7">
+                    </div>
+                    <h3 class="text-slate-600 dark:text-slate-200 text-2xl md:text-xl font-semibold pl-4">Orientadores</h3>
+                </div>
+                <p class="text-slate-500 dark:text-gray-400 font-medium">Tal como os alunos, os orientadores podem ser listados, o que não é posível na caderneta.</p>
+            </div>
+            <!-- Fim Cartão 5 -->
+            <!-- Cartão 6 -->
+            <div class="w-full h-40 md:h-44 lg:h-48 md:w-[45%] lg:w-[31%] p-6 bg-zinc-700 rounded-xl my-3 md:my-2">
+                <div class="flex flex-row items-center pb-4">
+                    <div class="h-10 w-10 bg-zinc-800 rounded-md flex justify-center items-center">
+                        <img src="frontend/assets/imgs/icons/Portabilidade - Icon.png" alt="icon Aluno" class="h-7 w-7">
+                    </div>
+                    <h3 class="text-slate-600 dark:text-slate-200 text-2xl md:text-xl font-semibold pl-4">Portabilidade</h3>
+                </div>
+                <p class="text-slate-500 dark:text-gray-400 font-medium">Esqueça a caderneta, agora
+                    pode aceder com apenas alguns
+                    cliques em qualquer dispositivo.</p>
+            </div>
+            <!-- Fim Cartão 6 -->
+        </section>
+    </main>
+
+    <!------------------------------------------------- Fim Zona Home ------------------------------------------------------>
     <!-- JS -->
     <script src="frontend/assets/js/links.js"></script>
-    <script src="frontend/assets/js/switchTheme.js"></script>
 </body>
+
 </html>

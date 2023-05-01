@@ -1,3 +1,14 @@
+## Tecnologias utilizadas
+- HTML(Mais tarde todos terão a extensão .php)
+  - Estrutura do site.
+- Tailwind CSS
+  - Framework de CSS baseada em inline classes já construidas;
+  - Eficiente;
+  - Fácil de usar e manter.
+- JavaScript
+  - Utilizado para dar uma maior interação;
+  - Fazer algumas coisas que apenas são possíveis com uma linguagem de porgramação.
+
 - Mudar tema concluido
   - É também possível utilizar Control + M ou Command + M (Mac) para mudar o tema apenas com o teclado;
   - Em breve talvez mais opções como definir com a cor do sistema;

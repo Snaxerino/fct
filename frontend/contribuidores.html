@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="dark scroll-smooth" lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCT - Contribuidores</title>
+    <link rel="shortcut icon" href="frontend/assets/imgs/favicon.ico" type="image/x-icon">
+    <!-- CSS -->
+    <link href="assets/css/output.css" rel="stylesheet">
+    <!-- Animações CSS -->
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/082fcabe62.js" crossorigin="anonymous"></script>
+    <!-- JS -->
+    <script src="frontend/assets/js/trocarTema.js"></script>
+</head>
+<body class="font-Satoshi bg-slate-50 dark:bg-zinc-800">
+    <!-- Inicio Header -->
+    <header class="bg-slate-50 dark:bg-zinc-800 flex items-center justify-between h-14 md:h-16 w-full shadow shadow-slate-200 dark:shadow px-8 md:px-12 lg:px-20 md:justify-end lg:justify-between fixed top-0 z-50">
+        <a class="flex items-center cursor-pointer select-none md:mr-auto lg:mr-0 text-3xl" href="index.html">
+            <i class="fa-solid fa-bolt text-slate-600 text-xl pr-1 dark:text-slate-200"></i>
+            <h2 class="text-blue-500 font-extrabold">FCT</h2>
+        </a>
+        <!-- Links do Menu -->
+        <nav id="menu" class="hidden md:flex">
+            <ul class="block md:flex items-center [&>li]:text-slate-600 [&>li]:px-2 [&>li]:font-semibold [&>li]:dark:text-slate-200">
+                <li class="hover:text-blue-500 dark:hover:text-blue-500">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="hover:text-blue-500 dark:hover:text-blue-500">
+                    <a href="../index.html#sobre">Sobre</a>
+                </li>
+                <li class="hover:text-blue-500 dark:hover:text-blue-500">
+                    <a href="../index.html#parceiros">Parceiros</a>
+                </li>
+                <li class="hover:text-blue-500 dark:hover:text-blue-500">
+                    <a href="contribuidores.html">Contribuidores</a>
+                </li>
+                <!-- <li class="hover:text-blue-500 dark:hover:text-blue-500">
+                    <a href="#cursos">Cursos</a>
+                </li> -->
+            </ul>
+            <!-- Login -->
+            <button class="bg-blue-500 text-slate-200 font-semibold px-3 py-1 rounded-full mx-2 hover:bg-blue-600"
+                onclick="paginaLogin2()">Login &rarr;</button>
+        </nav>
+        <!-- Trocar tema e icones relacionados com a escola -->
+        <div class="flex items-center">
+            <!-- Icon 3 pontos -->
+            <div class="hidden md:block lg:hidden">
+                <i class="fa-solid fa-ellipsis fa-lg text-slate-600 dark:text-slate-200 md:ml-2 dark:hover:text-slate-400 hover:text-slate"></i>
+            </div>
+            <div class="hidden items-center md:hidden lg:flex">
+                <!-- Trocar Tema -->
+                <button class="hover:bg-azul-com-opacidade dark:hover:bg-preto-com-opacidade rounded-md h-10 w-10 mr-2"
+                    onclick="trocarTema()">
+                    <i id="trocarIcon" class="fa-solid fa-sun text-lg dark:text-slate-200 text-slate-400"></i>
+                </button>
+                <!-- Icones relaionados com a escola -->
+                <div class="hidden md:flex [&>a]:text-slate-400 [&>a]:px-3 items-center [&>a]:text-lg [&>a]:dark:text-slate-200">
+                    <a class="border-l" href="https://www.facebook.com/agrupamentodeescolasdesantamariamaior">
+                        <i class="fa-brands fa-facebook-f hover:text-blue-500 pl-2"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCdlo76ck9sVojRF8Nm3HYcg">
+                        <i class="fa-brands fa-youtube hover:text-red-500"></i>
+                    </a>
+                    <a href="https://www.esmaior.pt/esmaior">
+                        <i class="fa-solid fa-sitemap hover:text-red-800"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Utilizdo para mudar tema e testar no telemovel enquanto o menu não está feito -->
+        <div class="flex items-center md:hidden lg:hidden">
+            <button class="hover:bg-azul-com-opacidade dark:hover:bg-preto-com-opacidade rounded-md h-10 w-10 mr-4 lg:hidden md:hidden" onclick="trocarTema()">
+                <i id="trocarIcon" class="fa-solid fa-sun text-lg dark:text-slate-200 text-slate-400"></i>
+            </button>
+            <!-- Menu Icon  -->
+            <div class="md:hidden">
+                <i id="botao-menu" class="fa-solid fa-bars-staggered fa-xl cursor-pointer text-slate-600 dark:text-slate-200"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Fim Header -->
+
+        <!-- JS -->
+        <script src="assets/js/links.js"></script>
+        <script src="assets/js/menu.js"></script>
+</body>
+</html>

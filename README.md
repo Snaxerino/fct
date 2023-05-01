@@ -1,4 +1,6 @@
 ## Tecnologias utilizadas
+
+### Frontend
 - HTML(Mais tarde todos terão a extensão .php)
   - Estrutura do site.
 - Tailwind CSS
@@ -7,7 +9,11 @@
   - Fácil de usar e manter.
 - JavaScript
   - Utilizado para dar uma maior interação;
-  - Fazer algumas coisas que apenas são possíveis com uma linguagem de porgramação.
+  - Fazer algumas coisas que apenas são possíveis com uma linguagem de programação.
+
+### Backend
+- PHP
+- MYSQL
 
 ## Ponto da Situação
 - Mudar tema concluido

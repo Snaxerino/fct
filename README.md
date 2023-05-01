@@ -31,5 +31,11 @@
 
 - Design das páginas privadas por enquanto em stand-by para permitir que as páginas públicas fiquem a 100%
 
+01/05/2023
+
+Zona sobre e footer criado(totalmente responsivo menos telas ultra wide)
+
+
+
 
 Dúvidas ou ideias contactar **goncalvesrodrigo.business@gmail.com**

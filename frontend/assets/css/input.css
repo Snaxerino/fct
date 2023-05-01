@@ -8,7 +8,6 @@
 
 @layer base {
     * {
-        /* @apply outline-none; */
         @apply duration-200;
     }
 }

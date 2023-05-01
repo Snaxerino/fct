@@ -242,9 +242,12 @@
         </div>
         <div class="flex flex-wrap md:flex-row justify-between">
             <!-- Páginas -->
-            <div class="w-48 flex flex-col mb-3">
-                <h3 class="text-slate-600 dark:text-slate-200 text-2xl font-medium pb-1">Páginas</h3>
-                <ul class="[&>li]:py-0.5 [&>li]:font-medium">
+            <div class="w-56 flex flex-col mb-3">
+                <div class="flex items-center text-slate-600 dark:text-slate-200 [&>i]:md:hidden opcoes">
+                    <h3 class="font-medium pb-1 cursor-pointer text-2xl pr-2">Páginas</h3>
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                </div>
+                <ul id="opcoes" class="[&>li]:py-0.5 [&>li]:font-medium hidden md:block">
                     <li class="text-slate-500 dark:text-gray-300">
                         <a href="#home">Home</a>
                     </li>
@@ -260,11 +263,14 @@
                 </ul>
             </div>
             <!-- Cursos -->
-            <div class="w-48 flex flex-col mb-3">
-                <h3 class="text-slate-600 dark:text-slate-200 text-2xl font-medium pb-1">Cursos</h3>
-                <ul class="[&>li]:py-0.5 [&>li]:font-medium">
+            <div class="w-56 flex flex-col mb-3">
+                <div class="flex items-center text-slate-600 dark:text-slate-200 [&>i]:md:hidden opcoes">
+                    <h3 id="opcoes" class="font-medium pb-1 cursor-pointer text-2xl pr-2">Cursos</h3>
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                </div>
+                <ul class="[&>li]:py-0.5 [&>li]:font-medium hidden md:block">
                     <li class="text-slate-500 dark:text-gray-300">
-                        <a href="#informatica">Informatica</a>
+                        <a href="#informatica">Informática</a>
                     </li>
                     <li class="text-slate-500 dark:text-gray-300">
                         <a href="#audiovisuais">Audiovisuais</a>
@@ -278,9 +284,12 @@
                 </ul>
             </div>
             <!-- Outro -->
-            <div class="w-48 flex flex-col mb-3">
-                <h3 class="text-slate-600 dark:text-slate-200 text-2xl font-medium pb-1">Outro</h3>
-                <ul class="[&>li]:py-0.5 [&>li]:font-medium">
+            <div class="w-56 flex flex-col mb-3">
+                <div class="flex items-center text-slate-600 dark:text-slate-200 [&>i]:md:hidden opcoes">
+                    <h3 id="opcoes" class="font-medium pb-1 cursor-pointer text-2xl pr-2">Outro</h3>
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                </div>
+                <ul class="[&>li]:py-0.5 [&>li]:font-medium hidden md:block">
                     <li class="text-slate-500 dark:text-gray-300">
                         <a href="https://www.facebook.com/agrupamentodeescolasdesantamariamaior">Facebook</a>
                     </li>
@@ -296,9 +305,12 @@
                 </ul>
             </div>
             <!-- Contacto -->
-            <div class="w-48 flex flex-col mb-3">
-                <h3 class="text-slate-600 dark:text-slate-200 text-2xl font-medium pb-1">Contacto</h3>
-                <ul class="[&>li]:py-0.5 [&>li]:font-medium">
+            <div class="w-56 flex flex-col mb-3">
+                <div class="flex items-center text-slate-600 dark:text-slate-200 [&>i]:md:hidden opcoes">
+                    <h3 id="opcoes" class="font-medium pb-1 cursor-pointer text-2xl pr-2">Contacto</h3>
+                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                </div>
+                <ul class="[&>li]:py-0.5 [&>li]:font-medium hidden md:block">
                     <li class="text-slate-500 dark:text-gray-300">
                         <a href="#ajuda">Ajuda</a>
                     </li>
@@ -320,6 +332,7 @@
 
     <!-- JS -->
     <script src="frontend/assets/js/links.js"></script>
+    <script src="frontend/assets/js/abrirOpcao.js"></script>
 </body>
 
 </html>

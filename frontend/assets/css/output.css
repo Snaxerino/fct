@@ -1037,6 +1037,16 @@ video {
   line-height: 2.5rem;
 }
 
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-black{
   font-weight: 900;
 }
@@ -1276,6 +1286,12 @@ video {
   color: rgb(71 85 105 / var(--tw-text-opacity));
 }
 
+@media (min-width: 640px){
+  .sm\:block{
+    display: block;
+  }
+}
+
 @media (min-width: 768px){
   .md\:my-0{
     margin-top: 0px;
@@ -1495,6 +1511,16 @@ video {
 :is(.dark .\[\&\>a\]\:dark\:text-slate-200)>a{
   --tw-text-opacity: 1;
   color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+
+.\[\&\>i\]\:block>i{
+  display: block;
+}
+
+@media (min-width: 768px){
+  .\[\&\>i\]\:md\:hidden>i{
+    display: none;
+  }
 }
 
 .\[\&\>li\]\:px-2>li{

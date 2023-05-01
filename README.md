@@ -9,6 +9,7 @@
   - Utilizado para dar uma maior interação;
   - Fazer algumas coisas que apenas são possíveis com uma linguagem de porgramação.
 
+## Ponto da Situação
 - Mudar tema concluido
   - É também possível utilizar Control + M ou Command + M (Mac) para mudar o tema apenas com o teclado;
   - Em breve talvez mais opções como definir com a cor do sistema;

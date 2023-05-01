@@ -75,10 +75,16 @@
                 </div>
             </div>
         </div>
-        <!-- Menu Icon  -->
-        <div class="md:hidden">
-            <i id="abrirMenu"
-                class="fa-solid fa-bars-staggered fa-xl cursor-pointer text-slate-600 dark:text-slate-200"></i>
+        <!-- Utilizdo para mudar tema e testar no telemovel enquanto o menu não está feito -->
+        <div class="flex items-center md:hidden lg:hidden">
+            <button class="hover:bg-azul-com-opacidade dark:hover:bg-preto-com-opacidade rounded-md h-10 w-10 mr-4 lg:hidden md:hidden" onclick="trocarTema()">
+                <i id="trocarIcon" class="fa-solid fa-sun text-lg dark:text-slate-200 text-slate-400"></i>
+            </button>
+            <!-- Menu Icon  -->
+            <div class="md:hidden">
+                <i id="abrirMenu"
+                    class="fa-solid fa-bars-staggered fa-xl cursor-pointer text-slate-600 dark:text-slate-200"></i>
+            </div>
         </div>
     </header>
     <!-- Fim Header -->

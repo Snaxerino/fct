@@ -2,6 +2,7 @@
 module.exports = {
     content: [
       "./frontend/**/*.{html,js}",
+      "./backend/**/*.{html,js}",
       "./index.html",
   ],
   theme: {

@@ -1460,6 +1460,10 @@ video {
     margin-top: 2rem;
   }
 
+  .md\:mt-16{
+    margin-top: 4rem;
+  }
+
   .md\:block{
     display: block;
   }
@@ -1548,6 +1552,14 @@ video {
 
   .md\:pt-28{
     padding-top: 7rem;
+  }
+
+  .md\:pt-24{
+    padding-top: 6rem;
+  }
+
+  .md\:pt-20{
+    padding-top: 5rem;
   }
 
   .md\:text-start{

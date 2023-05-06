@@ -15,7 +15,7 @@
     <script src="assets/js/trocarTema.js"></script>
 </head>
 <body class="font-Satoshi bg-white dark:bg-zinc-800" onload="autoFocus()">
-    <div class="flex flex-row h-screen">
+    <div class="flex flex-row h-screen max-w-scre">
             <!-- Imagem -->
         <div class="hidden lg:w-1/2 bg-blue-500 md:flex justify-center items-center">
             <img class="max-w-full max-h-full object-contain m-auto" src="assets/imgs/Saly - Ilustração 3D.png" alt="">
@@ -23,15 +23,15 @@
         <!-- Zona de Login -->
         <div class="w-full lg:w-1/2 m-auto text-center px-8 md:px-12 lg:px-28">
             <!-- Mudar tema -->
-            <button class="absolute top-0 right-0 hover:bg-azul-com-opacidade dark:hover:bg-preto-com-opacidade rounded-md h-10 w-10 m-4" onclick="trocarTema()">
-                <i id="trocarIcon" class="fa-solid fa-sun fa-lg dark:text-slate-200 text-slate-400"></i>
-            </button>
+                <button class="absolute top-0 right-0 hover:bg-azul-com-opacidade dark:hover:bg-preto-com-opacidade rounded-md h-10 w-10 m-4" onclick="trocarTema()">
+                    <i id="trocarIcon" class="fa-solid fa-sun fa-lg dark:text-slate-200 text-slate-400"></i>
+                </button>
             <!-- Logótipo e Zona com texto -->
             <i class="fa-solid fa-bolt text-blue-500 text-5xl pr-1 dark:text-yellow-300 pb-4"></i>
             <h2 class="text-2xl font-medium text-slate-600 dark:text-slate-200 pb-3">Bem-vindo de Volta!</h2>
             <p class="font-medium text-slate-500 dark:text-gray-400 pb-9 px-12">Faz login para acederes à tua conta e utilizares os serviços que temos para ti. </p>
             <!-- Página de login -->
-            <form name="loginUser" action="" onsubmit="return validarLogin()" class="flex flex-col m-auto" autocomplete="off">
+            <form name="loginUser" action="" class="flex flex-col m-auto" autocomplete="off">
                 <!-- Utilizador -->
                 <div class="flex flex-col ">
                     <label for="utilizador" class="flex flex-row justify-between items-center border border-slate-400 dark:border-gray-400 rounded-md py-2 px-3 mb-3 cursor-pointer">

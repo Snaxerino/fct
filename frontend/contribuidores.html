@@ -15,7 +15,7 @@
     <script src="../frontend/assets/js/trocarTema.js"></script>
 </head>
 <body class="font-Satoshi bg-slate-50 dark:bg-zinc-800">
-    <!-- Inicio Header -->
+    <!------------------------------------------ Inicio Header --------------------------------------->
     <header class="bg-slate-50 dark:bg-zinc-800 flex items-center justify-between h-14 md:h-16 w-full shadow shadow-slate-200 dark:shadow px-8 md:px-12 lg:px-20 md:justify-end lg:justify-between sticky top-0 z-50">
         <a class="flex items-center cursor-pointer select-none md:mr-auto lg:mr-0 text-3xl" href="../index.html">
             <i class="fa-solid fa-bolt text-slate-600 text-xl pr-1 dark:text-slate-200"></i>
@@ -81,137 +81,17 @@
             </div>
         </div>
     </header>
-    <!-- Fim Header -->
-    <!------------------------------------ Zona Contribuidores --------------------------------------->
-    <main id="contribuidores" class="w-full px-8 md:px-12 lg:px-20 pt-6 md:pt-16 max-w-screen-xl m-auto">
+    <!------------------------------------------ Inicio Header --------------------------------------->
+    <!----------------------------------- Zona Contribuidores ---------------------------------------->
+    <main id="contribuidores" class="w-full px-8 md:px-12 lg:px-20 pt-6 md:pt-16 max-w-screen-1366 m-auto">
         <!-- Informação principal e funcionalidades -->
-        <section class="flex flex-col m-auto w-full md:w-[30rem]">
+        <section class="flex flex-col m-auto w-full md:w-[30rem] lg:w-[32rem]">
             <h2 class="font-bold text-3xl text-center text-slate-600 dark:text-slate-200 md:text-5xl">Esta é a nossa<span class="text-blue-500"> equipa!</span></h2>
             <p class="font-medium text-slate-500 dark:text-gray-400 text-center lg:text-lg my-3 pr-2">Equipa de desenvolvimento web altamente qualificada!</p>
         </section>
         <!-- Cartões -->
         <section class="flex flex-wrap md:flex-row justify-between">
             <!-- Cartão 1 -->
-            <div class="w-full h-auto md:w-[48%] lg:w-[31%] p-6 bg-slate-100 shadow-md dark:bg-zinc-700 dark:shadow-none rounded-lg my-3 md:my-4">
-                <div class="flex flex-col items-center">
-                    <div class="h-20 w-20 bg-slate-200 dark:bg-zinc-800 rounded-full my-1"></div>
-                    <h3 class="text-slate-600 dark:text-slate-200 text-2xl md:text-3xl font-semibold mt-3">Rodrigo Gonçalves</h3>
-                    <div class="flex flex-row">
-                        <p class="text-sm text-slate-500 dark:text-gray-400 font-medium pr-2">Frontend Dev </p>
-                        <svg viewBox="0 0 2 2" aria-hidden="true" class="w-1 text-slate-500 dark:text-gray-400 font-medium fill-current">
-                            <circle cx="1" cy="1" r="1"></circle>
-                        </svg>
-                        <p class="text-sm text-slate-500 dark:text-gray-400 font-medium pl-2">17 Anos</p>
-                    </div>
-                    <p class="text-center text-slate-500 dark:text-gray-300 font-medium my-3">"Transformo conceitos em realidade com as tecnologias mais recentes"</p>
-                    <div class="hidden md:flex [&>a]:text-slate-400 [&>a]:px-3 items-center [&>a]:text-2xl [&>a]:dark:text-slate-400">
-                        <a href="#">
-                            <i class="fa-brands fa-github hover:text-slate-50"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-linkedin hover:text-slate-50"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Fim Cartão 1 -->
-            <!-- Cartão 2 -->
-            <div class="w-full h-auto md:w-[48%] lg:w-[31%] p-6 bg-slate-100 shadow-md dark:bg-zinc-700 dark:shadow-none rounded-lg my-3 md:my-4">
-                <div class="flex flex-col items-center">
-                    <div class="h-20 w-20 bg-slate-200 dark:bg-zinc-800 rounded-full my-1"></div>
-                    <h3 class="text-slate-600 dark:text-slate-200 text-2xl md:text-3xl font-semibold mt-3">Pedro Árias</h3>
-                    <div class="flex flex-row">
-                        <p class="text-sm text-slate-500 dark:text-gray-400 font-medium pr-2">Backend Dev </p>
-                        <svg viewBox="0 0 2 2" aria-hidden="true" class="w-1 text-slate-500 dark:text-gray-400 font-medium fill-current">
-                            <circle cx="1" cy="1" r="1"></circle>
-                        </svg>
-                        <p class="text-sm text-slate-500 dark:text-gray-400 font-medium pl-2">16 Anos</p>
-                    </div>
-                    <p class="text-center text-slate-500 dark:text-gray-300 font-medium my-3">"Transformo conceitos em realidade com as tecnologias mais recentes"</p>
-                    <div class="hidden md:flex [&>a]:text-slate-400 [&>a]:px-3 items-center [&>a]:text-2xl [&>a]:dark:text-slate-400">
-                        <a href="#">
-                            <i class="fa-brands fa-github hover:text-slate-50"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-linkedin hover:text-slate-50"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Fim Cartão 2 -->
-            <!-- Cartão 3 -->
-            <div class="w-full h-auto md:w-[48%] lg:w-[31%] p-6 bg-slate-100 shadow-md dark:bg-zinc-700 dark:shadow-none rounded-lg my-3 md:my-4">
-                <div class="flex flex-col items-center">
-                    <div class="h-20 w-20 bg-slate-200 dark:bg-zinc-800 rounded-full my-1"></div>
-                    <h3 class="text-slate-600 dark:text-slate-200 text-2xl md:text-3xl font-semibold mt-3">Pedro Crespo</h3>
-                    <div class="flex flex-row">
-                        <p class="text-sm text-slate-500 dark:text-gray-400 font-medium pr-2">Fullstack Dev</p>
-                        <svg viewBox="0 0 2 2" aria-hidden="true" class="w-1 text-slate-500 dark:text-gray-400 font-medium fill-current">
-                            <circle cx="1" cy="1" r="1"></circle>
-                        </svg>
-                        <p class="text-sm text-slate-500 dark:text-gray-400 font-medium pl-2">17 Anos</p>
-                    </div>
-                    <p class="text-center text-slate-500 dark:text-gray-300 font-medium my-3">"Transformo conceitos em realidade com as tecnologias mais recentes"</p>
-                    <div class="hidden md:flex [&>a]:text-slate-400 [&>a]:px-3 items-center [&>a]:text-2xl [&>a]:dark:text-slate-400">
-                        <a href="#">
-                            <i class="fa-brands fa-github hover:text-slate-50"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-linkedin hover:text-slate-50"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Fim Cartão 3 -->
-            <!-- Cartão 4 -->
-            <div class="w-full h-auto md:w-[48%] lg:w-[31%] p-6 bg-slate-100 shadow-md dark:bg-zinc-700 dark:shadow-none rounded-lg my-3 md:my-4">
-                <div class="flex flex-col items-center">
-                    <div class="h-20 w-20 bg-slate-200 dark:bg-zinc-800 rounded-full my-1"></div>
-                    <h3 class="text-slate-600 dark:text-slate-200 text-2xl md:text-3xl font-semibold mt-3">Gonçalo Lopes</h3>
-                    <div class="flex flex-row">
-                        <p class="text-sm text-slate-500 dark:text-gray-400 font-medium pr-2">Fullstack Dev </p>
-                        <svg viewBox="0 0 2 2" aria-hidden="true" class="w-1 text-slate-500 dark:text-gray-400 font-medium fill-current">
-                            <circle cx="1" cy="1" r="1"></circle>
-                        </svg>
-                        <p class="text-sm text-slate-500 dark:text-gray-400 font-medium pl-2">17 Anos</p>
-                    </div>
-                    <p class="text-center text-slate-500 dark:text-gray-300 font-medium my-3">"Transformo conceitos em realidade com as tecnologias mais recentes"</p>
-                    <div class="hidden md:flex [&>a]:text-slate-400 [&>a]:px-3 items-center [&>a]:text-2xl [&>a]:dark:text-slate-400">
-                        <a href="#">
-                            <i class="fa-brands fa-github hover:text-slate-50"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-linkedin hover:text-slate-50"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Fim Cartão 4 -->
-            <!-- Cartão 5 -->
-            <div class="w-full h-auto md:w-[48%] lg:w-[31%] p-6 bg-slate-100 shadow-md dark:bg-zinc-700 dark:shadow-none rounded-lg my-3 md:my-4">
-                <div class="flex flex-col items-center">
-                    <div class="h-20 w-20 bg-slate-200 dark:bg-zinc-800 rounded-full my-1"></div>
-                    <h3 class="text-slate-600 dark:text-slate-200 text-2xl md:text-3xl font-semibold mt-3">André Ribeiro</h3>
-                    <div class="flex flex-row">
-                        <p class="text-sm text-slate-500 dark:text-gray-400 font-medium pr-2">Backend Dev </p>
-                        <svg viewBox="0 0 2 2" aria-hidden="true" class="w-1 text-slate-500 dark:text-gray-400 font-medium fill-current">
-                            <circle cx="1" cy="1" r="1"></circle>
-                        </svg>
-                        <p class="text-sm text-slate-500 dark:text-gray-400 font-medium pl-2">16 Anos</p>
-                    </div>
-                    <p class="text-center text-slate-500 dark:text-gray-300 font-medium my-3">"Transformo conceitos em realidade com as tecnologias mais recentes"</p>
-                    <div class="hidden md:flex [&>a]:text-slate-400 [&>a]:px-3 items-center [&>a]:text-2xl [&>a]:dark:text-slate-400">
-                        <a href="#">
-                            <i class="fa-brands fa-github hover:text-slate-50"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-linkedin hover:text-slate-50"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- Fim Cartão 5 -->
-            <!-- Cartão 6 -->
             <div class="w-full h-auto md:w-[48%] lg:w-[31%] p-6 bg-slate-100 shadow-md dark:bg-zinc-700 dark:shadow-none rounded-lg my-3 md:my-4">
                 <div class="flex flex-col items-center">
                     <div class="h-20 w-20 bg-slate-200 dark:bg-zinc-800 rounded-full my-1"></div>
@@ -226,10 +106,130 @@
                     <p class="text-center text-slate-500 dark:text-gray-300 font-medium my-3">"Transformo conceitos em realidade com as tecnologias mais recentes"</p>
                     <div class="hidden md:flex [&>a]:text-slate-400 [&>a]:px-3 items-center [&>a]:text-2xl [&>a]:dark:text-slate-400">
                         <a href="#">
-                            <i class="fa-brands fa-github hover:text-slate-50"></i>
+                            <i class="fa-brands fa-github hover:text-slate-500 hover:dark:text-slate-50"></i>
                         </a>
                         <a href="#">
-                            <i class="fa-brands fa-linkedin hover:text-slate-50"></i>
+                            <i class="fa-brands fa-linkedin hover:text-slate-500 hover:dark:text-slate-50"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Cartão 1 -->
+            <!-- Cartão 2 -->
+            <div class="w-full h-auto md:w-[48%] lg:w-[31%] p-6 bg-slate-100 shadow-md dark:bg-zinc-700 dark:shadow-none rounded-lg my-3 md:my-4">
+                <div class="flex flex-col items-center">
+                    <div class="h-20 w-20 bg-slate-200 dark:bg-zinc-800 rounded-full my-1"></div>
+                    <h3 class="text-slate-600 dark:text-slate-200 text-2xl md:text-3xl font-semibold mt-3">André Ribeiro</h3>
+                    <div class="flex flex-row">
+                        <p class="text-sm text-slate-500 dark:text-gray-400 font-medium pr-2">Backend Dev </p>
+                        <svg viewBox="0 0 2 2" aria-hidden="true" class="w-1 text-slate-500 dark:text-gray-400 font-medium fill-current">
+                            <circle cx="1" cy="1" r="1"></circle>
+                        </svg>
+                        <p class="text-sm text-slate-500 dark:text-gray-400 font-medium pl-2">16 Anos</p>
+                    </div>
+                    <p class="text-center text-slate-500 dark:text-gray-300 font-medium my-3">"Transformo conceitos em realidade com as tecnologias mais recentes"</p>
+                    <div class="hidden md:flex [&>a]:text-slate-400 [&>a]:px-3 items-center [&>a]:text-2xl [&>a]:dark:text-slate-400">
+                        <a href="#">
+                            <i class="fa-brands fa-github hover:text-slate-500 hover:dark:text-slate-50"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin hover:text-slate-500 hover:dark:text-slate-50"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Cartão 2 -->
+            <!-- Cartão 3 -->
+            <div class="w-full h-auto md:w-[48%] lg:w-[31%] p-6 bg-slate-100 shadow-md dark:bg-zinc-700 dark:shadow-none rounded-lg my-3 md:my-4">
+                <div class="flex flex-col items-center">
+                    <div class="h-20 w-20 bg-slate-200 dark:bg-zinc-800 rounded-full my-1"></div>
+                    <h3 class="text-slate-600 dark:text-slate-200 text-2xl md:text-3xl font-semibold mt-3">Gonçalo Lopes</h3>
+                    <div class="flex flex-row">
+                        <p class="text-sm text-slate-500 dark:text-gray-400 font-medium pr-2">Fullstack Dev </p>
+                        <svg viewBox="0 0 2 2" aria-hidden="true" class="w-1 text-slate-500 dark:text-gray-400 font-medium fill-current">
+                            <circle cx="1" cy="1" r="1"></circle>
+                        </svg>
+                        <p class="text-sm text-slate-500 dark:text-gray-400 font-medium pl-2">17 Anos</p>
+                    </div>
+                    <p class="text-center text-slate-500 dark:text-gray-300 font-medium my-3">"Transformo conceitos em realidade com as tecnologias mais recentes"</p>
+                    <div class="hidden md:flex [&>a]:text-slate-400 [&>a]:px-3 items-center [&>a]:text-2xl [&>a]:dark:text-slate-400">
+                        <a href="#">
+                            <i class="fa-brands fa-github hover:text-slate-500 hover:dark:text-slate-50"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin hover:text-slate-500 hover:dark:text-slate-50"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Cartão 3 -->
+            <!-- Cartão 4 -->
+            <div class="w-full h-auto md:w-[48%] lg:w-[31%] p-6 bg-slate-100 shadow-md dark:bg-zinc-700 dark:shadow-none rounded-lg my-3 md:my-4">
+                <div class="flex flex-col items-center">
+                    <div class="h-20 w-20 bg-slate-200 dark:bg-zinc-800 rounded-full my-1"></div>
+                    <h3 class="text-slate-600 dark:text-slate-200 text-2xl md:text-3xl font-semibold mt-3">Pedro Árias</h3>
+                    <div class="flex flex-row">
+                        <p class="text-sm text-slate-500 dark:text-gray-400 font-medium pr-2">Backend Dev </p>
+                        <svg viewBox="0 0 2 2" aria-hidden="true" class="w-1 text-slate-500 dark:text-gray-400 font-medium fill-current">
+                            <circle cx="1" cy="1" r="1"></circle>
+                        </svg>
+                        <p class="text-sm text-slate-500 dark:text-gray-400 font-medium pl-2">16 Anos</p>
+                    </div>
+                    <p class="text-center text-slate-500 dark:text-gray-300 font-medium my-3">"Transformo conceitos em realidade com as tecnologias mais recentes"</p>
+                    <div class="hidden md:flex [&>a]:text-slate-400 [&>a]:px-3 items-center [&>a]:text-2xl [&>a]:dark:text-slate-400">
+                        <a href="#">
+                            <i class="fa-brands fa-github hover:text-slate-500 hover:dark:text-slate-50"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin hover:text-slate-500 hover:dark:text-slate-50"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Cartão 4 -->
+            <!-- Cartão 5 -->
+            <div class="w-full h-auto md:w-[48%] lg:w-[31%] p-6 bg-slate-100 shadow-md dark:bg-zinc-700 dark:shadow-none rounded-lg my-3 md:my-4">
+                <div class="flex flex-col items-center">
+                    <div class="h-20 w-20 bg-slate-200 dark:bg-zinc-800 rounded-full my-1"></div>
+                    <h3 class="text-slate-600 dark:text-slate-200 text-2xl md:text-3xl font-semibold mt-3">Pedro Crespo</h3>
+                    <div class="flex flex-row">
+                        <p class="text-sm text-slate-500 dark:text-gray-400 font-medium pr-2">Fullstack Dev</p>
+                        <svg viewBox="0 0 2 2" aria-hidden="true" class="w-1 text-slate-500 dark:text-gray-400 font-medium fill-current">
+                            <circle cx="1" cy="1" r="1"></circle>
+                        </svg>
+                        <p class="text-sm text-slate-500 dark:text-gray-400 font-medium pl-2">17 Anos</p>
+                    </div>
+                    <p class="text-center text-slate-500 dark:text-gray-300 font-medium my-3">"Transformo conceitos em realidade com as tecnologias mais recentes"</p>
+                    <div class="hidden md:flex [&>a]:text-slate-400 [&>a]:px-3 items-center [&>a]:text-2xl [&>a]:dark:text-slate-400">
+                        <a href="#">
+                            <i class="fa-brands fa-github hover:text-slate-500 hover:dark:text-slate-50"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin hover:text-slate-500 hover:dark:text-slate-50"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Cartão 5 -->
+            <!-- Cartão 6 -->
+            <div class="w-full h-auto md:w-[48%] lg:w-[31%] p-6 bg-slate-100 shadow-md dark:bg-zinc-700 dark:shadow-none rounded-lg my-3 md:my-4">
+                <div class="flex flex-col items-center">
+                    <div class="h-20 w-20 bg-slate-200 dark:bg-zinc-800 rounded-full my-1"></div>
+                    <h3 class="text-slate-600 dark:text-slate-200 text-2xl md:text-3xl font-semibold mt-3">Rodrigo Gonçalves</h3>
+                    <div class="flex flex-row">
+                        <p class="text-sm text-slate-500 dark:text-gray-400 font-medium pr-2">Frontend Dev </p>
+                        <svg viewBox="0 0 2 2" aria-hidden="true" class="w-1 text-slate-500 dark:text-gray-400 font-medium fill-current">
+                            <circle cx="1" cy="1" r="1"></circle>
+                        </svg>
+                        <p class="text-sm text-slate-500 dark:text-gray-400 font-medium pl-2">17 Anos</p>
+                    </div>
+                    <p class="text-center text-slate-500 dark:text-gray-300 font-medium my-3">"Transformo conceitos em realidade com as tecnologias mais recentes"</p>
+                    <div class="hidden md:flex [&>a]:text-slate-400 [&>a]:px-3 items-center [&>a]:text-2xl [&>a]:dark:text-slate-400">
+                        <a href="#">
+                            <i class="fa-brands fa-github hover:text-slate-500 hover:dark:text-slate-50"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin hover:text-slate-500 hover:dark:text-slate-50"></i>
                         </a>
                     </div>
                 </div>

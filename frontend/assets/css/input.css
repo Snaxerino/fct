@@ -12,3 +12,7 @@
         @apply select-none;
     }
 }
+
+.max-w-screen-1366 {
+    max-width: 1366px;
+}
